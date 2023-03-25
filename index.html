@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cima Hub</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="sideBar">
+    <!--filter content-->
+    <div class="container w-75 ms-3  d-flex flex-column justify-content-between" id="sideBarContent">
+      <ul class="p-0 mb-5 " id="movieCat">
+        <li class="item1 category opacity-100 pt-4"><a href="#"data-Category="popularURL">Now playing</a></li>
+        <li class="item2 category opacity-100 pt-4"><a href="#"data-Category="popularURL">Popular</a></li>
+        <li class="item3 category opacity-100 pt-4"><a href="#"data-Category="topratedURL">Top Rated</a></li>
+
+        <li class="item5  category opacity-100 pt-4"><a href="#"data-Category="trendingURL">Trending</a></li>
+        <li class="item6  category opacity-100 pt-4"><a href="#"data-Category="upcomingURL">Upcoming</a></li>
+        <li class="item6 opacity-100 pt-4"><a href="#contactUs" >Contact Us</a></li>
+      </ul>
+      <div class="mb-5">
+        <!-- nav-social-item -->
+        <div>
+          <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="me-3"><i class="fas fa-globe"></i></a>
+        </div>
+        <div class="pt-3">
+          <span class="text-white opacity-50">Copyright Â© 2019 All Rights Reserved.</span>
+        </div>
+
+      </div>
+    </div>
+    <!--white button  -->
+    <div class="bg-white w-25 p-3 d-flex flex-column justify-content-between">
+      <img src="test images/logo.png" alt="" class="w-100">
+      <button class="btn fs-3" id="showSideBarBtn"><i class="fa fa-align-justify" id="open"></i><i class="fa-solid fa-xmark d-none" id="close"></i></button>
+      <div class="strip-social-icon">
+        <ul class="p-3 w-100">
+          <li><i class="fas fa-globe mb-2"></i></li>
+          <li><i class="fas fa-share-alt"></i></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <header>
+    <div class="container my-5">
+      <div class="row my-3">
+        <div class="col-md-6">
+          <input id="getMovies" class="form-control mb-5  " placeholder="get movies by word...">
+        </div>
+        <div class="col-md-6">
+          <input class="form-control   " id="word" placeholder="search...">
+        </div>
+      </div>
+      <div class="row gy-4" id="movieDiv">
+        
+        <!-- templet -->
+        <!-- <div class="col-md-4">
+          <div class="movie position-relative">
+            <img src="test images/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg" alt="sorry error" class="img-fluid">
+            <div class="imageOverlay ">
+              <div id="movieCaption">
+                <h3>Movie name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed et, quam vero adipisci
+                  deserunt accusantium sit, non</p>
+                <p>rate 7.9</p>
+                <p>3-22-2023</p>
+              </div>
+
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+    </div>
+
+  </header>
+
+  <section id="contactUs">
+    <div class="container my-5">
+      <h2 class="fw-light text-white my-5">ContacUs...</h2>
+      <div class="row gy-3 my-4">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" id="name" placeholder="Enter Your Name" >
+            <div class="alert alert-danger d-none" id="namealert"  >
+              Your Name is not valid
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" id="email" placeholder="Enter Email">
+            <div class="alert alert-danger d-none" id="emailalert" role="alert">
+              entre valid email
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" id="phone" placeholder="Enter phone">
+            <div class="alert alert-danger d-none" id="phonealert" role="alert">
+              entre valid phone
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" id="age" placeholder="Enter Age">
+            <div class="alert alert-danger d-none" id="agealert" role="alert" >
+              entre valid Age between 18-89
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" type="password" id="password" placeholder="Enter Password">
+            <div class="alert alert-danger d-none" id="passwordalert" role="alert">
+              entre valid password *Minimum eight characters, at least one letter and one number:*
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+            <div class="alert alert-danger d-none" id="repasswordalert" role="alert">
+              entre valid Repassword
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <button type="submit" disabled="" id="submitBtn" class="btn btn-outline-danger">Submit</button>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
